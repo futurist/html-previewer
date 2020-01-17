@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML</title>
+    <script>
+        function onPreview(e){
+            const html = document.getElementById('code').value
+            window.location = 'preview.html#' + encodeURIComponent(html)
+        }
+    </script>
+</head>
+<body>
+    <div style="margin:auto; text-align: center;">
+        <div><textarea id="code" style="width:80%; height:300px;"></textarea></div>
+        <button onclick="onPreview()">预览</button>
+    </div>
+</body>
+</html>
