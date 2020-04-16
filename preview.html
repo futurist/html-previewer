@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Preview</title>
-    <style>
+    <!-- <style>
         body {
             margin: 0;
         }
-    </style>
+    </style> -->
 </head>
-<body>
+<body style="margin: 0;">
     <script>
         function html() {
             return decodeURIComponent(location.hash.slice(1));
@@ -24,6 +24,9 @@
             // Ctrl+Shift+I
             if(e.which == 73 && e.ctrlKey && e.shiftKey) {
                 window.location = 'index.html#' + location.hash.slice(1)
+            }
+            if(e.which == 66 && e.ctrlKey && e.shiftKey) {
+                document.body.style = '';
             }
         }
     </script>

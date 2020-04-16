@@ -10,4 +10,6 @@ Input **HTML Code** into first textarea, then press `preview` button, to preview
 
 Press `Ctrl + Shift + I`, to edit **HTML Code** in `index.html`.
 
+By default, `body` has `style="margin:0;"`, press `Ctrl + Shift + B` to remove that.
+
 
