@@ -46,5 +46,11 @@
         <div><textarea id="style"></textarea></div>
         <button id="submit" onclick="onPreview()">预览</button>
     </div>
+    <script>
+        const value = decodeURIComponent(location.hash.slice(1))
+        if(value) {
+            document.getElementById('code').value = value
+        }
+    </script>
 </body>
 </html>
