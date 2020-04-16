@@ -13,9 +13,19 @@
 </head>
 <body>
     <script>
+        function html() {
+            return decodeURIComponent(location.hash.slice(1));
+        }
         // document.open();
-        document.write(decodeURIComponent(location.hash.slice(1)));
+        document.write(html());
         // document.close();
+
+        document.onkeyup = function(e) {
+            // Ctrl+Shift+E
+            if(e.which == 69 && e.ctrlKey && e.shiftKey) {
+                window.location = 'index.html#' + location.hash.slice(1)
+            }
+        }
     </script>
 </body>
 </html>
